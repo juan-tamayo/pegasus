@@ -91,16 +91,16 @@ html {
     }
 }
 
-/* Pegasus workspace: graphite surfaces, electric violet, and lavender accents. */
+/* Pegasus workspace: charcoal surfaces, gunmetal borders, and silver accents. */
 :root {
     color-scheme: dark;
-    --pg-bg: #141218;
-    --pg-surface: #1c1922;
-    --pg-ink: #f2eef8;
-    --pg-muted: #aaa2b8;
-    --pg-border: #36303f;
-    --pg-accent: #8647db;
-    --pg-accent-ink: #d3b6f4;
+    --pg-bg: #111314;
+    --pg-surface: #1a1d1f;
+    --pg-ink: #f0f1f2;
+    --pg-muted: #a5aaad;
+    --pg-border: #34393c;
+    --pg-accent: #c7cdd1;
+    --pg-accent-ink: #d6dadd;
 }
 body {
     background: var(--pg-bg);
@@ -116,7 +116,7 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 select:focus-visible {
-    outline: 2px solid #d3b6f4;
+    outline: 2px solid #d6dadd;
     outline-offset: 4px;
 }
 .pegasus-shell {
@@ -126,7 +126,7 @@ select:focus-visible {
 .pegasus-sidebar {
     width: 232px;
     flex-shrink: 0;
-    background: #19151f;
+    background: #171a1c;
     border-right: 1px solid var(--pg-border);
     padding: 36px 24px 24px;
     display: flex;
@@ -142,7 +142,7 @@ select:focus-visible {
 }
 .brand-mark {
     background: var(--pg-accent);
-    color: white;
+    color: #111314;
     width: 34px;
     height: 36px;
     display: grid;
@@ -150,7 +150,7 @@ select:focus-visible {
     border-radius: 9px 2px 9px 2px;
 }
 .brand-dot {
-    color: #be96f5;
+    color: #c1c3c4;
     margin-left: -9px;
 }
 .workspace-label {
@@ -169,12 +169,12 @@ select:focus-visible {
     gap: 12px;
     padding: 12px;
     border-radius: 6px;
-    color: #b7aec7;
+    color: #b7b9ba;
     font-size: 14px;
 }
 .pegasus-sidebar nav a.active {
     color: var(--pg-accent-ink);
-    background: #332343;
+    background: #313334;
     font-weight: 600;
 }
 .sidebar-note {
@@ -197,12 +197,12 @@ select:focus-visible {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: #c599ff;
+    background: #c8cacb;
     margin-right: 8px;
 }
 .sign-out {
     margin-top: 16px;
-    border-top: 1px solid #36303f;
+    border-top: 1px solid #34393c;
     padding: 20px 12px 0;
     display: flex;
     gap: 10px;
@@ -240,7 +240,7 @@ select:focus-visible {
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 1.6px;
-    color: #c6a6ef;
+    color: #c7c9ca;
     margin-bottom: 12px;
 }
 h1 {
@@ -274,11 +274,11 @@ h2 {
 }
 .button.primary {
     background: var(--pg-accent);
-    color: white;
+    color: #111314;
     border: 1px solid var(--pg-accent);
 }
 .button.primary:hover {
-    background: #7336c4;
+    background: #e0e4e6;
 }
 .button.secondary {
     border: 1px solid var(--pg-border);
@@ -324,16 +324,16 @@ h2 {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #9b92a7;
+    background: #9a9c9d;
 }
 .metric-marker.amber {
-    background: #c6a6ef;
+    background: #c7c9ca;
 }
 .metric-marker.blue {
-    background: #d79fe0;
+    background: #c5c7c8;
 }
 .metric-marker.green {
-    background: #e8def2;
+    background: #e6e8e9;
 }
 .application-section {
     border: 1px solid var(--pg-border);
@@ -421,7 +421,7 @@ h2 {
 }
 .applications-table th {
     padding: 12px 20px;
-    background: #211c28;
+    background: #202223;
     border-block: 1px solid var(--pg-border);
     font-size: 10px;
     letter-spacing: 0.6px;
@@ -432,10 +432,10 @@ h2 {
 .applications-table td {
     padding: 20px;
     font-size: 12px;
-    border-bottom: 1px solid #302938;
+    border-bottom: 1px solid #2e3031;
 }
 .applications-table tr:hover td {
-    background: #27202f;
+    background: #252728;
 }
 .company-cell {
     display: flex;
@@ -457,8 +457,8 @@ h2 {
     width: 38px;
     height: 38px;
     border-radius: 7px;
-    background: #302638;
-    color: #d3b6f4;
+    background: #2d2f30;
+    color: #d6dadd;
     display: grid;
     place-items: center;
     font-size: 17px;
@@ -472,15 +472,15 @@ h2 {
     display: grid;
     place-items: center;
     padding: 5px;
-    color: #c6a6ef;
+    color: #c7c9ca;
 }
 .status-badge {
     display: inline-flex;
     gap: 6px;
     align-items: center;
-    border: 1px solid #42394e;
-    background: #28222f;
-    color: #c1b8d0;
+    border: 1px solid #414344;
+    background: #262829;
+    color: #c1c3c4;
     border-radius: 4px;
     padding: 5px 8px;
     font-size: 10px;
@@ -494,31 +494,31 @@ h2 {
     background: currentColor;
 }
 .status-badge.awaiting_response {
-    color: #d0b1f3;
-    background: #32243e;
-    border-color: #594168;
+    color: #cfd1d2;
+    background: #2f3132;
+    border-color: #545657;
 }
 .status-badge.interview {
-    color: #e5b6ee;
-    background: #39253e;
-    border-color: #65436c;
+    color: #d6d8d9;
+    background: #323435;
+    border-color: #5a5c5d;
 }
 .status-badge.offer {
-    color: #f1e5ff;
-    background: #3a2c4c;
-    border-color: #69527e;
+    color: #f0f2f3;
+    background: #393b3c;
+    border-color: #666869;
 }
 .status-badge.rejected {
-    color: #c9c3d2;
-    background: #29262f;
-    border-color: #4b4456;
+    color: #c8cacb;
+    background: #282a2b;
+    border-color: #4a4c4d;
 }
 .status-badge.needs_review {
-    color: #e4b5ec;
+    color: #d5d7d8;
 }
 .review-label {
     display: block;
-    color: #e4b5ec;
+    color: #d5d7d8;
     font-size: 10px;
     margin-top: 5px;
 }
@@ -544,7 +544,7 @@ h2 {
 }
 .empty-state svg {
     margin: 0 auto 16px;
-    color: #c6a6ef;
+    color: #c7c9ca;
 }
 .empty-state h3 {
     font-size: 19px;
@@ -559,11 +559,11 @@ h2 {
     display: flex;
     gap: 16px;
     align-items: center;
-    background: #2d213b;
+    background: #2c2e2f;
     padding: 24px;
     border-radius: 6px;
     margin-top: 24px;
-    color: #ddc5fa;
+    color: #dddfe0;
 }
 .coverage h3 {
     font-size: 14px;
@@ -598,16 +598,16 @@ h2 {
 .flash-message,
 .demo-banner {
     padding: 14px 18px;
-    border: 1px solid #594168;
-    background: #2d213b;
+    border: 1px solid #545657;
+    background: #2c2e2f;
     font-size: 12px;
     border-radius: 5px;
     margin: 20px 0;
 }
 .demo-banner {
-    background: #28222f;
-    border-color: #42394e;
-    color: #c1b8d0;
+    background: #262829;
+    border-color: #414344;
+    color: #c1c3c4;
 }
 .demo-banner span {
     font-weight: 650;
@@ -635,17 +635,17 @@ h2 {
     place-items: center;
     width: 44px;
     height: 44px;
-    background: #302638;
+    background: #2d2f30;
     border-radius: 8px;
     font-size: 24px;
     margin-bottom: 24px;
 }
 .gmail-icon {
-    color: #d3b6f4;
+    color: #d6dadd;
 }
 .namecheap-icon {
-    color: #e5b6ee;
-    background: #39253e;
+    color: #d6d8d9;
+    background: #323435;
 }
 .provider-grid .button {
     margin-top: 24px;
@@ -712,7 +712,7 @@ h2 {
 }
 .event-dot {
     margin-top: 3px;
-    background: #3a2c4c;
+    background: #393b3c;
     color: var(--pg-accent-ink);
     border-radius: 50%;
     width: 25px;
@@ -741,7 +741,7 @@ h2 {
     line-height: 1.8;
     white-space: pre-wrap;
     overflow-wrap: anywhere;
-    border-left: 2px solid #594168;
+    border-left: 2px solid #545657;
     padding-left: 16px;
 }
 form label:not(.select-control) {
@@ -774,7 +774,7 @@ form label:not(.select-control) select {
 }
 .field-error {
     font-size: 12px;
-    color: #e5b6ee;
+    color: #d6d8d9;
     margin-top: 6px;
 }
 .login-shell {
@@ -787,7 +787,7 @@ form label:not(.select-control) select {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #24182f;
+    background: #202427;
 }
 .login-story h1 {
     font-size: clamp(38px, 4.3vw, 64px);
@@ -796,7 +796,7 @@ form label:not(.select-control) select {
 }
 .login-story > div > p:not(.eyebrow) {
     max-width: 420px;
-    color: #c3b5d4;
+    color: #c2c4c5;
     line-height: 1.8;
     font-size: 15px;
     margin-top: 24px;
@@ -806,8 +806,8 @@ form label:not(.select-control) select {
     align-items: center;
     gap: 16px;
     padding: 22px;
-    background: #30203f;
-    border: 1px solid #574069;
+    background: #2e3031;
+    border: 1px solid #535556;
     border-radius: 6px;
     margin-top: 36px;
     max-width: 430px;
@@ -828,7 +828,7 @@ form label:not(.select-control) select {
 .login-footnote {
     font-size: 10px;
     letter-spacing: 1.6px;
-    color: #c1a5de;
+    color: #bfc1c2;
 }
 .login-form {
     display: grid;
@@ -1125,7 +1125,7 @@ form label:not(.select-control) select {
     }
     .mobile-company > svg {
         margin-left: auto;
-        color: #c6a6ef;
+        color: #c7c9ca;
     }
     .mobile-meta {
         margin: 16px 0 8px;
