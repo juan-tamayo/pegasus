@@ -1,24 +1,22 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue';
 
-defineOptions({
-    inheritAttrs: false,
-});
-
-interface Props {
-    className?: HTMLAttributes['class'];
-}
-
-defineProps<Props>();
+defineOptions({ inheritAttrs: false });
+defineProps<{ className?: HTMLAttributes['class'] }>();
 </script>
 
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 42" :class="className" v-bind="$attrs">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" :class="className" v-bind="$attrs" aria-hidden="true">
+        <!-- A side profile cropped to the horse's torso and two lifted wings. -->
+        <path fill="currentColor" opacity="0.55" d="M35 43C29 33 28 21 35 7c1 10 3 16 8 23l-1-15c7 10 10 20 7 29Z" />
+        <path fill="currentColor" d="M39 44C24 40 13 27 7 8c10 4 18 10 26 20C25 15 20 8 18 3c15 7 26 22 28 37l-7 4Z" />
         <path
-            fill="currentColor"
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M17.2 5.633 8.6.855 0 5.633v26.51l16.2 9 16.2-9v-8.442l7.6-4.223V9.856l-8.6-4.777-8.6 4.777V18.3l-5.6 3.111V5.633ZM38 18.301l-5.6 3.11v-6.157l5.6-3.11V18.3Zm-1.06-7.856-5.54 3.078-5.54-3.079 5.54-3.078 5.54 3.079ZM24.8 18.3v-6.157l5.6 3.111v6.158L24.8 18.3Zm-1 1.732 5.54 3.078-13.14 7.302-5.54-3.078 13.14-7.3v-.002Zm-16.2 7.89 7.6 4.222V38.3L2 30.966V7.92l5.6 3.111v16.892ZM8.6 9.3 3.06 6.222 8.6 3.143l5.54 3.08L8.6 9.3Zm21.8 15.51-13.2 7.334V38.3l13.2-7.334v-6.156ZM9.6 11.034l5.6-3.11v14.6l-5.6 3.11v-14.6Z"
+            fill="none"
+            stroke="var(--pg-accent, #295943)"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            d="M14 17c7 6 15 15 21 23M23 14c6 7 13 17 16 25"
         />
+        <path fill="currentColor" d="M8 43c7-3 13-4 20-3l12 3c7 1 11-3 15-8l4 3c-3 5-4 10-3 15-6-2-10-2-16 0-9 3-15 1-23-2-4-2-7-3-11-3l2-5Z" />
     </svg>
 </template>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import AppLogoIcon from '@/components/AppLogoIcon.vue';
 import { Head, useForm } from '@inertiajs/vue3';
-import { ArrowRight, Check, Feather, Mail } from 'lucide-vue-next';
+import { ArrowRight, Check, Mail } from 'lucide-vue-next';
 defineProps<{ status?: string; googleConfigured?: boolean }>();
 const form = useForm({ email: '', password: '', remember: false });
 function submit() {
@@ -12,7 +13,7 @@ function submit() {
     <div class="login-shell">
         <section class="login-story">
             <div class="brand">
-                <span class="brand-mark"><Feather :size="22" /></span> pegasus.
+                <span class="brand-mark"><AppLogoIcon width="28" height="28" /></span> pegasus.
             </div>
             <div>
                 <p class="eyebrow">A LITTLE CLARITY FOR YOUR NEXT BIG MOVE</p>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
+import AppLogoIcon from '@/components/AppLogoIcon.vue';
 import { Link, router, usePage } from '@inertiajs/vue3';
-import { ArrowUpRight, BriefcaseBusiness, Feather, LogOut, Mail } from 'lucide-vue-next';
+import { ArrowUpRight, BriefcaseBusiness, LogOut, Mail } from 'lucide-vue-next';
 import { computed } from 'vue';
 const page = usePage();
 const message = computed(() => (page.props.flash as { message?: string })?.message);
@@ -10,7 +11,7 @@ const message = computed(() => (page.props.flash as { message?: string })?.messa
     <div class="pegasus-shell">
         <aside class="pegasus-sidebar">
             <Link href="/applications" class="brand"
-                ><span class="brand-mark"><Feather :size="22" /></span> pegasus<span class="brand-dot">.</span></Link
+                ><span class="brand-mark"><AppLogoIcon width="28" height="28" /></span> pegasus<span class="brand-dot">.</span></Link
             >
             <div class="workspace-label">YOUR JOB SEARCH</div>
             <nav aria-label="Main navigation">
