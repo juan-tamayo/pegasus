@@ -91,14 +91,16 @@ html {
     }
 }
 
-/* Pegasus workspace: quiet surfaces, structured typography, warm green accent. */
+/* Pegasus workspace: graphite surfaces, electric violet, and lavender accents. */
 :root {
-    --pg-bg: #f8f9f7;
-    --pg-surface: #fff;
-    --pg-ink: #22332b;
-    --pg-muted: #6b756f;
-    --pg-border: #e4e9e3;
-    --pg-accent: #295943;
+    color-scheme: dark;
+    --pg-bg: #141218;
+    --pg-surface: #1c1922;
+    --pg-ink: #f2eef8;
+    --pg-muted: #aaa2b8;
+    --pg-border: #36303f;
+    --pg-accent: #8647db;
+    --pg-accent-ink: #d3b6f4;
 }
 body {
     background: var(--pg-bg);
@@ -114,7 +116,7 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 select:focus-visible {
-    outline: 2px solid var(--pg-accent);
+    outline: 2px solid #d3b6f4;
     outline-offset: 4px;
 }
 .pegasus-shell {
@@ -124,7 +126,7 @@ select:focus-visible {
 .pegasus-sidebar {
     width: 232px;
     flex-shrink: 0;
-    background: #f0f3ed;
+    background: #19151f;
     border-right: 1px solid var(--pg-border);
     padding: 36px 24px 24px;
     display: flex;
@@ -148,7 +150,7 @@ select:focus-visible {
     border-radius: 9px 2px 9px 2px;
 }
 .brand-dot {
-    color: #6f977c;
+    color: #be96f5;
     margin-left: -9px;
 }
 .workspace-label {
@@ -167,12 +169,12 @@ select:focus-visible {
     gap: 12px;
     padding: 12px;
     border-radius: 6px;
-    color: #627067;
+    color: #b7aec7;
     font-size: 14px;
 }
 .pegasus-sidebar nav a.active {
-    color: var(--pg-accent);
-    background: #e0e9dd;
+    color: var(--pg-accent-ink);
+    background: #332343;
     font-weight: 600;
 }
 .sidebar-note {
@@ -195,12 +197,12 @@ select:focus-visible {
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: #69937b;
+    background: #c599ff;
     margin-right: 8px;
 }
 .sign-out {
     margin-top: 16px;
-    border-top: 1px solid #dce4d8;
+    border-top: 1px solid #36303f;
     padding: 20px 12px 0;
     display: flex;
     gap: 10px;
@@ -238,7 +240,7 @@ select:focus-visible {
     font-size: 10px;
     font-weight: 600;
     letter-spacing: 1.6px;
-    color: #6d826f;
+    color: #c6a6ef;
     margin-bottom: 12px;
 }
 h1 {
@@ -276,7 +278,7 @@ h2 {
     border: 1px solid var(--pg-accent);
 }
 .button.primary:hover {
-    background: #214b37;
+    background: #7336c4;
 }
 .button.secondary {
     border: 1px solid var(--pg-border);
@@ -322,16 +324,16 @@ h2 {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #ccd6cd;
+    background: #9b92a7;
 }
 .metric-marker.amber {
-    background: #c2a567;
+    background: #c6a6ef;
 }
 .metric-marker.blue {
-    background: #87a5b8;
+    background: #d79fe0;
 }
 .metric-marker.green {
-    background: #72a282;
+    background: #e8def2;
 }
 .application-section {
     border: 1px solid var(--pg-border);
@@ -419,7 +421,7 @@ h2 {
 }
 .applications-table th {
     padding: 12px 20px;
-    background: #fafbf9;
+    background: #211c28;
     border-block: 1px solid var(--pg-border);
     font-size: 10px;
     letter-spacing: 0.6px;
@@ -430,10 +432,10 @@ h2 {
 .applications-table td {
     padding: 20px;
     font-size: 12px;
-    border-bottom: 1px solid #eef1eb;
+    border-bottom: 1px solid #302938;
 }
 .applications-table tr:hover td {
-    background: #fcfdfb;
+    background: #27202f;
 }
 .company-cell {
     display: flex;
@@ -455,8 +457,8 @@ h2 {
     width: 38px;
     height: 38px;
     border-radius: 7px;
-    background: #eff2ed;
-    color: #577260;
+    background: #302638;
+    color: #d3b6f4;
     display: grid;
     place-items: center;
     font-size: 17px;
@@ -470,15 +472,15 @@ h2 {
     display: grid;
     place-items: center;
     padding: 5px;
-    color: #788d7b;
+    color: #c6a6ef;
 }
 .status-badge {
     display: inline-flex;
     gap: 6px;
     align-items: center;
-    border: 1px solid #e3e8e1;
-    background: #f4f6f1;
-    color: #677365;
+    border: 1px solid #42394e;
+    background: #28222f;
+    color: #c1b8d0;
     border-radius: 4px;
     padding: 5px 8px;
     font-size: 10px;
@@ -492,31 +494,31 @@ h2 {
     background: currentColor;
 }
 .status-badge.awaiting_response {
-    color: #8a6c27;
-    background: #faf6e9;
-    border-color: #ede5c8;
+    color: #d0b1f3;
+    background: #32243e;
+    border-color: #594168;
 }
 .status-badge.interview {
-    color: #3c6b85;
-    background: #edf4f8;
-    border-color: #dce9f0;
+    color: #e5b6ee;
+    background: #39253e;
+    border-color: #65436c;
 }
 .status-badge.offer {
-    color: #2d734b;
-    background: #eef7ee;
-    border-color: #d8ead9;
+    color: #f1e5ff;
+    background: #3a2c4c;
+    border-color: #69527e;
 }
 .status-badge.rejected {
-    color: #986158;
-    background: #faf0ed;
-    border-color: #efdfda;
+    color: #c9c3d2;
+    background: #29262f;
+    border-color: #4b4456;
 }
 .status-badge.needs_review {
-    color: #8b6442;
+    color: #e4b5ec;
 }
 .review-label {
     display: block;
-    color: #8b6442;
+    color: #e4b5ec;
     font-size: 10px;
     margin-top: 5px;
 }
@@ -532,7 +534,7 @@ h2 {
     gap: 10px;
 }
 .table-footer .selected {
-    color: var(--pg-accent);
+    color: var(--pg-accent-ink);
     font-weight: 700;
 }
 .empty-state {
@@ -542,7 +544,7 @@ h2 {
 }
 .empty-state svg {
     margin: 0 auto 16px;
-    color: #7e9880;
+    color: #c6a6ef;
 }
 .empty-state h3 {
     font-size: 19px;
@@ -557,11 +559,11 @@ h2 {
     display: flex;
     gap: 16px;
     align-items: center;
-    background: #edf2e8;
+    background: #2d213b;
     padding: 24px;
     border-radius: 6px;
     margin-top: 24px;
-    color: #496449;
+    color: #ddc5fa;
 }
 .coverage h3 {
     font-size: 14px;
@@ -596,16 +598,16 @@ h2 {
 .flash-message,
 .demo-banner {
     padding: 14px 18px;
-    border: 1px solid #dce7d8;
-    background: #eff6ea;
+    border: 1px solid #594168;
+    background: #2d213b;
     font-size: 12px;
     border-radius: 5px;
     margin: 20px 0;
 }
 .demo-banner {
-    background: #f7f3e9;
-    border-color: #e9dfc8;
-    color: #756743;
+    background: #28222f;
+    border-color: #42394e;
+    color: #c1b8d0;
 }
 .demo-banner span {
     font-weight: 650;
@@ -633,17 +635,17 @@ h2 {
     place-items: center;
     width: 44px;
     height: 44px;
-    background: #eff2ed;
+    background: #302638;
     border-radius: 8px;
     font-size: 24px;
     margin-bottom: 24px;
 }
 .gmail-icon {
-    color: #47745d;
+    color: #d3b6f4;
 }
 .namecheap-icon {
-    color: #aa6d35;
-    background: #fbf0e4;
+    color: #e5b6ee;
+    background: #39253e;
 }
 .provider-grid .button {
     margin-top: 24px;
@@ -710,8 +712,8 @@ h2 {
 }
 .event-dot {
     margin-top: 3px;
-    background: #e4efde;
-    color: var(--pg-accent);
+    background: #3a2c4c;
+    color: var(--pg-accent-ink);
     border-radius: 50%;
     width: 25px;
     height: 25px;
@@ -739,7 +741,7 @@ h2 {
     line-height: 1.8;
     white-space: pre-wrap;
     overflow-wrap: anywhere;
-    border-left: 2px solid #dce8d6;
+    border-left: 2px solid #594168;
     padding-left: 16px;
 }
 form label:not(.select-control) {
@@ -772,7 +774,7 @@ form label:not(.select-control) select {
 }
 .field-error {
     font-size: 12px;
-    color: #a1493e;
+    color: #e5b6ee;
     margin-top: 6px;
 }
 .login-shell {
@@ -785,7 +787,7 @@ form label:not(.select-control) select {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #e9efdf;
+    background: #24182f;
 }
 .login-story h1 {
     font-size: clamp(38px, 4.3vw, 64px);
@@ -794,7 +796,7 @@ form label:not(.select-control) select {
 }
 .login-story > div > p:not(.eyebrow) {
     max-width: 420px;
-    color: #62715b;
+    color: #c3b5d4;
     line-height: 1.8;
     font-size: 15px;
     margin-top: 24px;
@@ -804,8 +806,8 @@ form label:not(.select-control) select {
     align-items: center;
     gap: 16px;
     padding: 22px;
-    background: #f6f9f0;
-    border: 1px solid #d8e2cc;
+    background: #30203f;
+    border: 1px solid #574069;
     border-radius: 6px;
     margin-top: 36px;
     max-width: 430px;
@@ -826,7 +828,7 @@ form label:not(.select-control) select {
 .login-footnote {
     font-size: 10px;
     letter-spacing: 1.6px;
-    color: #72846a;
+    color: #c1a5de;
 }
 .login-form {
     display: grid;
@@ -1123,7 +1125,7 @@ form label:not(.select-control) select {
     }
     .mobile-company > svg {
         margin-left: auto;
-        color: #788d7b;
+        color: #c6a6ef;
     }
     .mobile-meta {
         margin: 16px 0 8px;
@@ -1162,4 +1164,13 @@ form label:not(.select-control) select {
         padding-inline: 4px;
     }
 }
-@media(max-width:360px) { .pegasus-sidebar nav a { flex-direction:column; gap:4px; font-size:10px; }.pegasus-sidebar nav { gap:6px; } }
+@media (max-width: 360px) {
+    .pegasus-sidebar nav a {
+        flex-direction: column;
+        gap: 4px;
+        font-size: 10px;
+    }
+    .pegasus-sidebar nav {
+        gap: 6px;
+    }
+}
